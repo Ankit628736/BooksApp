@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Cart = ({items,key}) => {
     // console.log(items);
@@ -16,12 +17,14 @@ const Cart = ({items,key}) => {
           <div className="card-body">
             <h2 className="card-title">
               {items.name}
-              <div className="badge badge-secondary">{items.Category}</div>
+              <div className="badge badge-secondary">{items.category}</div>
             </h2>
             <p>{items.title}</p>
             <div className="card-actions justify-between">
               <div className="badge badge-outline">Rs.{items.price}</div>
-              <div className="px-2 py-1 rounded-lg border  hover:bg-pink-500 duration-100 ease-in-out scale-110 hover:text-white p-2">Buy Now</div>
+              <div className="px-2 py-1 rounded-lg border  hover:bg-pink-500 duration-100 ease-in-out scale-110 hover:text-white p-2">
+                <Link to={'/detail'}>Inquire Now</Link>
+              </div>
             </div>
           </div>
         </div>

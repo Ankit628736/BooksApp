@@ -1,12 +1,25 @@
-import React from "react";
-import list from "./Data.json";
+import React, { useEffect, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Cart from "./Cart";
+import axios from "axios";
 
 const Freebook = () => {
-  const FilterData = list.filter((e) => e.Category === "Free");
+  const [book, setBook] = useState([]);
+  useEffect(() => {
+    const getBook = async () => {
+      try {
+        const res = await axios.get("http://localhost:3000/book");
+        setBook(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getBook();
+  }, []);
+
+  const FilterData = book.filter((e) => e.category === "Free");
 
   var settings = {
     dots: true,
@@ -42,7 +55,7 @@ const Freebook = () => {
       },
     ],
   };
-  
+
   return (
     <>
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">

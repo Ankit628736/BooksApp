@@ -1,50 +1,170 @@
 [
     {
-        "id":1,
-        "name": "Story Bokk",
-        "title": "Lorem 10",
+        "id": 1,
+        "name": "The Great Adventure",
+        "title": "Explore the World of Lore",
         "price": 0,
-        "Category" : "Free",
-        "image" : "https://img.freepik.com/premium-photo/stack-books-with-word-top_583952-80623.jpg?semt=ais_hybrid"
+        "category": "Free",
+        "image": "https://img.freepik.com/premium-photo/stack-books-with-word-top_583952-80623.jpg?semt=ais_hybrid"
     },
     {
-        "id":2,
-        "name": "Story Bokk",
-        "title": "Lorem 10",
+        "id": 2,
+        "name": "The Hidden Tales",
+        "title": "Mysteries of the Past",
         "price": 0,
-        "Category" : "Free",
-        "image" : "https://img.freepik.com/premium-photo/stack-books-with-word-top_583952-80623.jpg?semt=ais_hybrid"
+        "category": "Free",
+        "image": "https://plus.unsplash.com/premium_photo-1669652639356-f5cb1a086976?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJvb2tzfGVufDB8fDB8fHww"
     },
     {
-        "id":3,
-        "name": "Story Bokk",
-        "title": "Lorem 10",
+        "id": 3,
+        "name": "Legends Unfolded",
+        "title": "Stories Beyond Time",
         "price": 0,
-        "Category" : "Free",
-        "image" : "https://img.freepik.com/premium-photo/stack-books-with-word-top_583952-80623.jpg?semt=ais_hybrid"
+        "category": "Free",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDb6bEv-GAx8R4s7qjkoEtCF5j7P6rTY-Pvw&s"
     },
     {
-        "id":4,
-        "name": "Story Bokk",
-        "title": "Lorem 10",
-        "price": 0,
-        "Category" : "Cost",
-        "image" : "https://img.freepik.com/premium-photo/stack-books-with-word-top_583952-80623.jpg?semt=ais_hybrid"
+        "id": 4,
+        "name": "The Art of Knowledge",
+        "title": "Path to Wisdom",
+        "price": 15,
+        "category": "Paid",
+        "image": "https://img.freepik.com/premium-photo/stack-books-with-word-top_583952-80623.jpg?semt=ais_hybrid"
     },
     {
-        "id":5,
-        "name": "Story Bokk",
-        "title": "Lorem 10",
-        "price": 0,
-        "Category" : "Cost",
-        "image" : "https://img.freepik.com/premium-photo/stack-books-with-word-top_583952-80623.jpg?semt=ais_hybrid"
+        "id": 5,
+        "name": "Wisdom's Journey",
+        "title": "Unlocking the Mind",
+        "price": 10,
+        "category": "Paid",
+        "image": "https://img.freepik.com/premium-photo/stack-books-with-word-top_583952-80623.jpg?semt=ais_hybrid"
     },
     {
-        "id":6,
-        "name": "Story Bokk",
-        "title": "Lorem 10",
+        "id": 6,
+        "name": "The Tale Weaver",
+        "title": "Imagination Unbound",
         "price": 0,
-        "Category" : "Free",
-        "image" : "https://img.freepik.com/premium-photo/stack-books-with-word-top_583952-80623.jpg?semt=ais_hybrid"
+        "category": "Free",
+        "image": "https://img.freepik.com/premium-photo/stack-books-with-word-top_583952-80623.jpg?semt=ais_hybrid"
+    },
+    {
+        "id": 7,
+        "name": "Journeys of the Mind",
+        "title": "Exploring Inner Worlds",
+        "price": 20,
+        "category": "Paid",
+        "image": "https://img.freepik.com/free-photo/old-books-vintage-background-selective-focus_169016-9248.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Echoes of Eternity",
+        "title": "Timeless Tales Retold",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-photo/stack-books-table_1150-18729.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Science Simplified",
+        "title": "Discovering Modern Science",
+        "price": 18,
+        "category": "Paid",
+        "image": "https://img.freepik.com/free-photo/books-composition-with-open-book_23-2147690555.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Pathfinders",
+        "title": "Stories of Discovery",
+        "price": 12,
+        "category": "Paid",
+        "image": "https://img.freepik.com/free-photo/pile-hardback-books-reading-book_1150-12925.jpg"
+    },
+    {
+        "id": 11,
+        "name": "The Hidden Kingdom",
+        "title": "Adventures in Unknown Lands",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-photo/books-stacked-wooden-table_1150-20013.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Enchanted Realms",
+        "title": "Magic and Mystery",
+        "price": 25,
+        "category": "Paid",
+        "image": "https://img.freepik.com/free-photo/selective-focus-opened-book_23-2147676773.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Through the Ages",
+        "title": "World History Unveiled",
+        "price": 15,
+        "category": "Paid",
+        "image": "https://img.freepik.com/free-photo/book-open-library-without-students-due-covid-19-pandemic_1150-23976.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Mastering the Mind",
+        "title": "A Guide to Mental Clarity",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-photo/reading-books-library_144627-4805.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Artistic Expressions",
+        "title": "Understanding Art and Culture",
+        "price": 10,
+        "category": "Paid",
+        "image": "https://img.freepik.com/free-photo/books-different-colors-arranged-top-view_23-2148271936.jpg"
+    },
+    {
+        "id": 16,
+        "name": "The Ancient World",
+        "title": "A Journey Through Time",
+        "price": 22,
+        "category": "Paid",
+        "image": "https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5921.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Nature's Wonders",
+        "title": "Exploring the Wild",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-photo/book-library_1150-12931.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Rise of Civilizations",
+        "title": "The Building Blocks of Society",
+        "price": 30,
+        "category": "Paid",
+        "image": "https://img.freepik.com/free-photo/closeup-shot-stack-books-library_181624-40444.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Tales of Valor",
+        "title": "Heroes and Legends",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-photo/stacked-old-books-grungy-wall_1150-11949.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Wonders of the World",
+        "title": "Man-Made Marvels",
+        "price": 15,
+        "category": "Paid",
+        "image": "https://img.freepik.com/free-photo/opened-book-library_144627-5257.jpg"
+    },
+    {
+        "id": 21,
+        "name": "The Science of Today",
+        "title": "Modern Scientific Discoveries",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-photo/stack-books-shelf-library-background_1150-21750.jpg"
     }
 ]

@@ -1,11 +1,25 @@
-import React from "react";
-import Data from "./Data.json";
+import React, { useEffect, useState } from "react";
+// import Data from "./Data.json";
 import Cart from "./Cart";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Courses = () => {
-  // console.log(Data);
+  const [book,setBook] = useState([]);
 
+  useEffect(()=>{
+    const getBook = async()=>{
+      try{
+        const res = await axios.get("http://localhost:3000/book");
+        console.log(res.data);
+        setBook(res.data)
+      }catch(error){
+        console.log(error);
+      }
+    }
+    getBook();
+  },[])
+ 
   return (
     <div className="min-h-screen">
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
@@ -30,7 +44,7 @@ const Courses = () => {
           </Link>
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
-          {Data.map((item) => (
+          {book.map((item) => (
             <Cart items={item} key={item.id} />
           ))}
         </div>

@@ -1,12 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 
 const Signup = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = (data) => {
-      console.log(data);
-    };
+    const onSubmit = async(data) => {
+      const userInfo = {
+        fullname: data.fullname,
+        email: data.email,
+        password: data.password
+      }
+      await axios.post("http://localhost:3000/user/signup", userInfo)
+      .then((res)=>{
+        console.log(res.data);
+        if(res.data){
+          alert("User created successfully");
+        }
+      }).catch((err)=>{
+        console.log(err);
+        alert("Error: "+err.response.data.message);
+    });
+  };
   return (
     <div className="flex h-screen items-center justify-center">
       <div id="my_modal_3">
@@ -24,9 +39,9 @@ const Signup = () => {
               type="text"
               placeholder="Enter your Name"
               className="w-80 px-3 py-1 border rounded-md outline-none"
-              {...register("name", { required: true })}
+              {...register("fullname", { required: true })}
             />
-            {errors.name && <p className="text-red-500">Email is required</p>}
+            {errors.fullname && <p className="text-red-500">Email is required</p>}
           </div>
           <div className="mt-4 space-y-2">
             <span>Email</span>
@@ -54,7 +69,7 @@ const Signup = () => {
             <button 
             type="submit"
             className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-100 ease-in-out">
-              Signup
+              <Link to={'/'}>Signup</Link>
             </button>
             <p>
               Have Account?{" "}

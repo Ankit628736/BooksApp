@@ -17,12 +17,23 @@ const Login = () => {
     console.log(data);
   };
 
+  const handleClose = () => {
+    const modal = document.getElementById("my_modal_3");
+    if (modal) {
+      modal.close();
+    }
+  };
+
   return (
     <div>
       <dialog id="my_modal_3" className="modal">
         <div className="modal-box">
           <form onSubmit={handleSubmit(onSubmit)}>
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+            <button
+              type="button"
+              onClick={handleClose}
+              className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+            >
               ✕
             </button>
             <h3 className="font-bold text-lg">Login</h3>
@@ -56,7 +67,7 @@ const Login = () => {
                 type="submit"
                 className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-100 ease-in-out"
               >
-                Login
+                <button onClick={handleClose}>Login</button>
               </button>
               <p>
                 Not registered?{" "}
